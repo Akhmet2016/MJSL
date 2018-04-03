@@ -1,7 +1,5 @@
 function hello(){
 	alert( 1 << 2 );
-	alert( 1 << 3 );
-	alert( 3 << 3 );
 }
 	// //Как правило, доступы задаются в виде констант
 	// var ACCESS_ADMIN = 1;
