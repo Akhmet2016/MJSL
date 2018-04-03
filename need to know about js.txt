@@ -1,0 +1,25 @@
+/////prompt
+Функция prompt принимает два аргумента:
+
+result = prompt(title, default);
+Она выводит модальное окно с заголовком title, полем для ввода текста,
+заполненным строкой по умолчанию default и кнопками OK/CANCEL.
+
+Пользователь должен либо что-то ввести и нажать OK, либо отменить ввод кликом на CANCEL
+или нажатием Esc на клавиатуре.
+
+Пример: prompt("messag", "go in the club");
+
+/////confirm
+Синтаксис:
+
+result = confirm(question);
+confirm выводит окно с вопросом question с двумя кнопками: OK и CANCEL.
+
+Результатом будет true при нажатии OK и false – при CANCEL(Esc).
+
+Например:
+
+ var isAdmin = confirm("Вы - администратор?");
+
+alert( isAdmin );

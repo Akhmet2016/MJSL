@@ -1,6 +1,14 @@
-function hello(){
-	alert( 1 << 2 );
+function rank(){
+	var clientRank = prompt("Введите ваше звание, пожалуйста)", "");
+	document.getElementById("rank").innerHTML = clientRank;
 }
+function surname(){
+	var clientSurname = prompt("Введите вашу фамилию, пожалуйста)", "");
+	document.getElementById("surname").innerHTML = clientSurname;
+}
+	// confirm("Go home");
+	// prompt("messag", "go in the club");
+
 	// //Как правило, доступы задаются в виде констант
 	// var ACCESS_ADMIN = 1;
 	// var	ACCESS_GOODS_EDIT = 2;

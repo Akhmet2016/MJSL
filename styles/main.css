@@ -1,4 +1,6 @@
-p{
+.texto{
 	color: red;
-	font-size: 25px;
+	font-size: 55px;
+	text-align: center;
+	margin-top: 200px;
 }
