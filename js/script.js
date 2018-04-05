@@ -1,11 +1,194 @@
-function rank(){
-	var clientRank = prompt("Введите ваше звание, пожалуйста)", "");
-	document.getElementById("rank").innerHTML = clientRank;
-}
-function surname(){
-	var clientSurname = prompt("Введите вашу фамилию, пожалуйста)", "");
-	document.getElementById("surname").innerHTML = clientSurname;
-}
+	function age(){
+		function checkAge(age) {
+			if (age > 18) 
+			{
+				return true;
+			} 
+			else 
+			{
+				return confirm('Родители разрешили?');
+			}
+		}
+
+		var age = prompt('Ваш возраст?');
+
+		if (checkAge(age)) 
+		{
+			alert( 'Доступ разрешен' );
+		} 
+		else 
+		{
+			alert( 'В доступе отказано' );
+		}
+	}
+
+	// function cal(){
+	// 	function calcD(a, b, c) {
+	// 	   return b*b - 4*a*c;
+	// 	}
+
+	// 	var test = calcD(-4, 2, 1);
+	// 	alert(test)
+	// }
+
+	// function showMessage(){
+	// 	var from = prompt('Введите что-нибудь');
+	// 	var text = prompt('Введите что-нибудь еще раз');
+	// 	message(from,text);
+	// 	function message(from, text){
+	// 		if (from == null)
+	// 		{
+	// 			from = 'Сложно что ли что-нибудь присвоить';
+	// 		}
+	// 		if (text == null)
+	// 		{
+	// 			text = 'Сложно что ли что-нибудь присвоить';
+	// 		}
+	// 		alert (from + ' ' + text);
+	// 	}
+	// }
+
+	// function browser(){
+	// 	var br = prompt('Введите название браузера которым вы пользуетесь','');
+	// 	if(br == 'IE')
+	// 	{
+	// 		alert( 'О, да у вас IE!' );
+	// 	}
+	// 	else if(br == 'Chrome' || br == 'Firefox' || br == 'Safari' || br == 'Opera')
+	// 	{
+	// 		alert( 'Да, и эти браузеры мы поддерживаем' );
+	// 	}
+	// 	else
+	// 	{
+	// 		alert( 'Мы надеемся, что и в вашем браузере все ок!' );
+	// 	}
+	// }
+
+	// function cus(){
+	// 	var value = +prompt('Введите число от 1 до 3','');
+	// 	switch(value){
+	// 		case 1:
+	// 			alert('Мало');
+	// 			break;
+	// 		case 2:
+	// 			alert('Самое то');
+	// 			break;
+	// 		case 3:
+	// 			alert('Много');
+	// 			break;
+	// 		default:
+	// 			alert('не то же');
+	// 	}
+	// }
+
+	// function summa(){
+	// 	var sum = 0;
+	// 	while(true){
+	// 		var value = +prompt('введите число','');
+	// 		if (!value) break;
+	// 		sum += value;
+	// 	}
+	// 	document.getElementById('sum').innerHTML = sum;
+	// }
+
+	// function modeIf(){
+	// 	var a = prompt('введите первое число', 0);
+	// 	var b = prompt('введите второе число', 0);
+	// 	a = Number(a);
+	// 	b = Number(b);
+	// 	var c = a + b;
+	// 	var rezult = (c < 4) ? 'Мало' : 'Много';
+	// 	document.getElementById('modeIf').innerHTML = rezult;
+	// }
+
+	// function login(){
+	// 	var login = prompt('Введите логин','');
+	// 	if(login == 'admin')
+	// 	{
+	// 		var password = prompt('Введите пароль', 0);
+	// 		if (password == 123)
+	// 		{
+	// 			document.getElementById('login').innerHTML = 'Welcome!';
+	// 		}
+	// 		else if (password == null)
+	// 		{
+	// 			document.getElementById('login').innerHTML = 'Вход отменен';
+	// 		}
+	// 		else
+	// 		{
+	// 			document.getElementById('login').innerHTML = 'Пароль не верный';
+	// 		}
+	// 	}
+	// 	else if (login == null)
+	// 	{
+	// 		document.getElementById('login').innerHTML = 'Вход отменен';
+	// 	}
+	// 	else
+	// 	{
+	// 		document.getElementById('login').innerHTML = 'Логин не верный';
+	// 	}
+	// }
+
+	// function prom(){
+	// 	var p = prompt('Введите любое число, можно даже отрицаетльное', 0);
+	// 	var rezult;
+	// 	if (p > 0)
+	// 	{
+	// 		rezult = 1;
+	// 	}
+	// 	else if (p == 0)
+	// 	{
+	// 		rezult = 0;
+	// 	}
+	// 	else if (p < 0)
+	// 	{
+	// 		rezult = -1;
+	// 	}
+	// 	else
+	// 	{
+	// 		rezult = 'Введите число';
+	// 	}
+	// 	document.getElementById('rez').innerHTML = rezult; 
+	// }
+
+	// function age(){
+	// 	var age = prompt('введите свой возсраст','');
+	// 	if(age >= 14 && age <= 90)
+	// 	{
+	// 		document.getElementById('age').innerHTML = 'Вы в интервале (14;90)';
+	// 	}
+	// 	else
+	// 	{
+	// 		document.getElementById('age').innerHTML = 'НЕа';
+	// 	}
+	// }
+
+	// function car(){
+	// 	var car = prompt('Какая последня буква в слове BM.., чтобы получилось название марки?', '');
+	// 	var rezult = (car == 'W' || car == 'w') ? 'Правильно' : 'Не правильно';
+	// 	document.getElementById('car').innerHTML = rezult; 
+	// }
+
+	// function year(){
+	// 	var year = prompt('В каком году началась вторая мировая война?', '');
+	// 	if(year != 1941)
+	// 	{
+	// 		document.getElementById('year').innerHTML = 'Ответ не верный';
+	// 	}
+	// 	else 
+	// 	{
+	// 		document.getElementById('year').innerHTML = 'Верно';
+	// 	}	
+	// }
+
+	// function rank(){
+	// 	var clientRank = prompt("Введите ваше звание, пожалуйста)", "");
+	// 	document.getElementById("rank").innerHTML = clientRank;
+	// }
+	// function surname(){
+	// 	var clientSurname = prompt("Введите вашу фамилию, пожалуйста)", "");
+	// 	document.getElementById("surname").innerHTML = clientSurname;
+	// }
 	// confirm("Go home");
 	// prompt("messag", "go in the club");
 
