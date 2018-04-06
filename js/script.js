@@ -1,26 +1,91 @@
-	function age(){
-		function checkAge(age) {
-			if (age > 18) 
-			{
-				return true;
-			} 
-			else 
-			{
-				return confirm('Родители разрешили?');
-			}
-		}
-
-		var age = prompt('Ваш возраст?');
-
-		if (checkAge(age)) 
-		{
-			alert( 'Доступ разрешен' );
-		} 
-		else 
-		{
-			alert( 'В доступе отказано' );
-		}
+	function factorial(n){
+		if (n == 1) return n;
+		return n * factorial(n-1);
 	}
+
+	// function sumTo(n){
+	// 	if(n != 1)
+	// 	{
+	// 		return n + sumTo(n-1);
+	// 	}
+	// 	else
+	// 	{
+	// 		return n;
+	// 	}
+	// }
+
+	// function sumTo(n){
+	// 	var sum = 0;
+	// 	for (var i = 0; i <= n; i++)
+	// 	{
+	// 		sum += i;
+	// 	}
+	// 	return sum;
+	// }
+
+	// function pow(x,n) {
+	// 	var result = x;
+	// 	for (var i = 1; i < n; i++) {
+	// 		result *= x;
+	// 	}
+	// 	return alert(result);
+	// }
+
+	// function pow(x,n){
+	// 	if(n != 1)
+	// 	{
+	// 		return x * pow(x, n - 1);
+	// 	}
+	// 	else
+	// 	{
+	// 		return x;
+	// 	}
+	// }
+
+
+	// function goNext(){
+	// 	var bam = new Function('a,b','return a + b');
+	// 	var rezult = bam(4,5);
+	// 	alert(rezult);
+	// }
+
+	// function doThis(){
+	// 	function ask(question, yes, no){
+	// 		if(confirm(question)) yes()
+	// 		else no()
+	// 	}
+	// 	function showOk(){
+	// 		alert ('Cool');
+	// 	}
+	// 	function showNo(){
+	// 		alert ('What\'s up man?');
+	// 	}
+	// 	ask("Вы согласны?", showOk, showNo);
+	// }
+
+	// function age(){
+	// 	function checkAge(age) {
+	// 		if (age > 18) 
+	// 		{
+	// 			return true;
+	// 		} 
+	// 		else 
+	// 		{
+	// 			return confirm('Родители разрешили?');
+	// 		}
+	// 	}
+
+	// 	var age = prompt('Ваш возраст?');
+
+	// 	if (checkAge(age)) 
+	// 	{
+	// 		alert( 'Доступ разрешен' );
+	// 	} 
+	// 	else 
+	// 	{
+	// 		alert( 'В доступе отказано' );
+	// 	}
+	// }
 
 	// function cal(){
 	// 	function calcD(a, b, c) {
