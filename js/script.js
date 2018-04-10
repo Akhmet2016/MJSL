@@ -1,7 +1,42 @@
-	function factorial(n){
-		if (n == 1) return n;
-		return n * factorial(n-1);
+	function truncate(str, maxLenght) {
+		if(str.length > maxLenght) {
+			alert(str.slice(0, maxLenght - 3) + '...');
+		} else {
+			alert(str);
+		}
 	}
+
+	// function checkSpam(str) {
+ //  		var lowerStr = str.toLowerCase();
+
+ //  		return !!(~lowerStr.indexOf('viagra') || ~lowerStr.indexOf('xxx'));
+	// }	
+
+	// function makeLarge() {
+	// 	var str = 'ахмет';
+
+	// 	alert(str[0].toUpperCase() + str.slice(1));
+	// }
+
+	// function makeTest() {
+	// 	var str = 'Ослик Иа-Иа хочет пить';
+	// 	var target = 'Иа';
+
+	// 	var pos = 0;
+
+	// 	while(true) {
+	// 		var foundPos = str.indexOf(target, pos);
+	// 		if (foundPos == -1) break;
+
+	// 		alert(foundPos);
+	// 		pos = foundPos + 1;
+	// 	}
+
+	// 	// var pos = -1;
+	// 	// while ((pos = str.indexOf(target, pos + 1)) != -1) {
+	// 	// 	alert( pos );
+	// 	// }
+	// }
 
 	// function sumTo(n){
 	// 	if(n != 1)
