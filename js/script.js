@@ -1,10 +1,216 @@
-	function truncate(str, maxLenght) {
-		if(str.length > maxLenght) {
-			alert(str.slice(0, maxLenght - 3) + '...');
-		} else {
-			alert(str);
-		}
+	function camelize(str) {
+		
 	}
+
+	// function addClass(obj, cls) {
+	// 	var classes = obj.className ? obj.className.split(' ') : [];
+
+	// 	for (var i = 0; i < classes.length; i++) {
+	// 		if (classes[i] == cls) return; //класс уже есть
+	// 	}
+
+	// 	classes.push(cls); //добавляем
+
+	// 	obj.className = classes.join(' '); //обновить свойство
+	// }
+
+	// function makeSort() {
+	// 	[1, -2, 15, 2, 0, 8].sort(function(a, b) {
+ //  				alert( a + " <> " + b );
+	// 		});
+	// }
+
+	// function filterOut() {
+	// 	var arr = [2,3,8,9,8,4,6,7,8,6,9,8,7,9,756], arra = [], a = 2, b = 10;
+
+	// 	for (var i = 0; i < arr.length; i++) {
+	// 		if (i >= a && i <= b) {
+	// 			arra.push(arr[i]); 
+	// 		}
+	// 	}
+
+	// 	alert(arra);
+	// }
+
+	// function toCount() {
+	// 	var mas = [];
+	// 	var sum = 0;
+	// 	var value;
+		
+	// 	while(true) {
+	// 		value = prompt('Введите первое число',0);
+	// 		if (!(!isNaN(parseFloat(value)) && isFinite(value)) || value == null || value == '') {
+	// 			break;
+	// 		} else {
+	// 			mas.push(+value);
+	// 			value = prompt('Введите второе число',0);
+	// 			if (!(!isNaN(parseFloat(value)) && isFinite(value)) || value == null || value == '') {
+	// 				break;
+	// 			} else {
+	// 				mas.push(+value);
+	// 				sum = mas[0] + mas[1];
+	// 				alert(sum);
+	// 				break;
+	// 			}
+	// 		}
+	// 	}
+	// 	// var numbers = [];
+	// 	// while (true) {
+	// 	//   var value = prompt("Введите число", 0);
+	// 	//   if (value === "" || value === null || isNaN(value)) break;
+	// 	//   numbers.push(+value);
+	// 	// }
+	// 	// var sum = 0;
+	// 	// for (var i = 0; i < numbers.length; i++) {
+	// 	//   sum += numbers[i];
+	// 	// }
+	// 	// alert( sum );
+	// }
+
+	// function getRandom() {
+	// 	var arr = ['gg','hh','dd','tt'];
+	// 	var min = 0, max = arr.length - 1;
+	// 	var rand = min + Math.floor(Math.random() * (max + 1 - min));
+	// 	alert(arr[rand]);
+	// }
+
+	// function getLast() {
+	// 	var styles = ['Джаз','Блюз'];
+	// 	var i = 0, elements;
+
+	// 	styles.push('Рок-н-Ролл');
+
+	// 	for (i = 0; i < styles.length; i++) {
+	// 		if (i == 0) {
+	// 			elements = styles[i];
+	// 		} else {
+	// 			elements += ' ' + styles[i];
+	// 		}
+	// 	}
+	// 	console.log(elements);
+
+	// 	styles[styles.length - 2] = 'Классика';
+
+	// 	elements = null;
+	// 	for (i = 0; i < styles.length; i++) {
+	// 		if (i == 0) {
+	// 			elements = styles[i];
+	// 		} else {
+	// 			elements += ' ' + styles[i];
+	// 		}
+	// 	}
+	// 	console.log(elements);
+
+	// 	styles.shift();
+
+	// 	elements = null;
+	// 	for (i = 0; i < styles.length; i++) {
+	// 		if (i == 0) {
+	// 			elements = styles[i];
+	// 		} else {
+	// 			elements += ' ' + styles[i];
+	// 		}
+	// 	}
+	// 	console.log(elements);
+
+	// 	styles.unshift('Рэп','Регги');
+
+	// 	elements = null;
+	// 	for (i = 0; i < styles.length; i++) {
+	// 		if (i == 0) {
+	// 			elements = styles[i];
+	// 		} else {
+	// 			elements += ' ' + styles[i];
+	// 		}
+	// 	}
+	// 	console.log(elements);
+	// }
+
+	// function multiplyNumeric() {
+	// 	var menu = {
+	// 		width: 200,
+	// 		height: 300,
+	// 		title: 'My name'
+	// 	};
+
+	// 	for (var key in menu) {
+	// 		if (!isNaN(parseFloat(menu[key])) && isFinite(menu[key])) {
+	// 			menu[key] = menu[key] * 2;
+	// 		}
+	// 		alert(menu[key]);
+	// 	}
+	// }
+
+	// function sumSalary() {
+	// 	var salaries = {
+	// 		'Djon': 15000,
+	// 		'Ron': 25000,
+	// 		'Ann': 10000
+	// 	};
+
+	// 	var count = 0;
+	// 	var sum = 0;
+
+	// 	for (var key in salaries) {
+	// 		count++;
+	// 		sum = sum + salaries[key];
+	// 	}
+
+	// 	(count == 0) ? alert('No items') : alert('Well done: ' + sum);
+	// }
+
+	// function isEmpty() {
+	// 	var home = {
+	// 		streat: 'Artema',
+	// 		number: 148,
+	// 		flat: 40
+	// 	};
+
+	// 	var gun = {};
+
+	// 	var count1 = 0;
+	// 	var count2 = 0;
+
+	// 	for (var key1 in home) {
+	// 		count1++;
+	// 	};
+
+	// 	for (var key2 in gun) {
+	// 		count2++;
+	// 	};
+
+	// 	(count1 == 0) ? alert('Объект пуст') : alert('Объект не пуст');
+	// 	(count2 == 0) ? alert('Объект пуст') : alert('Объект не пуст');
+	// }
+
+	// function makeBust() {
+	// 	var car = {
+	// 		mark: 'BMW',
+	// 		model: 'X5M',
+	// 		color: 'black',
+	// 		year: 2017
+	// 	};
+	// 	for (var key in car) {
+	// 		alert('Ключ: ' + key + '\nЗначение: ' + car[key]);
+	// 	}
+	// }
+
+	// function createObject() {
+	// 	user = {};
+	// 	user.name = 'Вася';
+	// 	user.surname = 'Петров';
+	// 	user.name = 'Сергей';
+	// 	delete user.name;
+	// 	alert(user.name);
+	// }
+
+	// function truncate(str, maxLenght) {
+	// 	if(str.length > maxLenght) {
+	// 		alert(str.slice(0, maxLenght - 3) + '...');
+	// 	} else {
+	// 		alert(str);
+	// 	}
+	// }
 
 	// function checkSpam(str) {
  //  		var lowerStr = str.toLowerCase();
